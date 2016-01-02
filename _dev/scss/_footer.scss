@@ -1,0 +1,52 @@
+// -------------------------------
+// FOOTER
+// -------------------------------
+
+.footer {
+	border-top: 1px solid darken($color-bg, 10);
+	margin-top: 70px;
+}
+
+.footer__content {
+	padding: 70px 0;
+	list-style: none;
+	margin: 0 -$margin;
+
+	@media (min-width: $screen-sm) {
+		@include display(flex);
+
+		> li {
+			@include flex(1 0 50%);
+			padding: 0 $margin;
+		}
+	}
+
+	[class*="widget_"] {
+		ul {
+			list-style: none;
+			padding-left: 0;
+		}
+	}
+}
+
+.footer__bottom {
+	font-size: 13px;
+	@include display(flex);
+
+	.menu ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	a {
+		color: $color;
+
+		&:hover {
+			color: $color-blue;
+		}
+	}
+
+	.copyright {
+		margin-left: auto;
+	}
+}

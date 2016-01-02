@@ -1,0 +1,97 @@
+// -------------------------------
+// GLOBAL
+// -------------------------------
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll;
+}
+body {
+	overflow: hidden;
+	background: $color-bg url(../img/background.png) no-repeat -178px -28px;
+	background-size: 712px 462px;
+	line-height:1.6;
+	text-rendering: optimizeLegibility;
+	color: $color;
+	font-size: 16px;
+	font-family: $font;
+}
+
+
+a, a:before, a:after {
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	        transition: all .25s;
+}
+a, a:visited {
+	color: $color-teal;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $color-blue;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol {
+	margin: 0 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-montserrat;
+	color: $color-darker;
+	font-weight: 600;
+}
+
+h1, h2 {
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 21px;
+}
+
+blockquote {
+	font-style:italic !important;
+	margin-bottom: 15px;
+  background: #f2f2f1;
+  border-left: 2px solid #ddd;
+  padding: 15px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+::selection {
+	color: #fff;
+	background-color: $color-yellow;
+}
+
+::-moz-selection {
+	color: #fff;
+	background-color: $color-yellow;
+}
+
+
+// -------------------------------
+// LAYOUT
+// -------------------------------
+
+.wrapper {
+	max-width: 810px;
+	padding: 0 5%;
+	margin: 0 auto;
+
+	@media (min-width: $screen-md) {
+		padding: 0 30px;
+	}
+}
