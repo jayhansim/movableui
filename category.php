@@ -4,16 +4,18 @@
 		<!-- section -->
 		<section>
 
-			<h1><?php _e( 'Categories for ', 'html5blank' ); single_cat_title(); ?></h1>
+			<div class="archive__header">
+				<h5 class="archive__type">Category</h5>
+				<h1><?php single_cat_title(); ?></h1>
+				<?php if($page != 0): ?>
+          <div>Page <?php echo $page; ?></div>
+        <?php endif; ?>
+			</div>
 
 			<?php get_template_part('loop'); ?>
-
-			<?php get_template_part('pagination'); ?>
 
 		</section>
 		<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

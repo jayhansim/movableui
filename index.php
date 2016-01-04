@@ -10,6 +10,4 @@
 		<!-- /section -->
 	</main>
 
-</div><!-- /wrapper -->
-
 <?php get_footer(); ?>

@@ -1,0 +1,22 @@
+// -------------------------------
+// ARCHIVE PAGES
+// -------------------------------
+
+.archive__header {
+	text-align: center;
+	margin-bottom: 70px;
+
+	h1 {
+		display: inline-block;
+		color: #fff;
+		background: $color-blue;
+		box-shadow: 0 2px 6px rgba($color-blue,.3);
+		padding: 8px 20px;
+	}
+}
+
+.archive__type {
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
