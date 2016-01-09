@@ -1,5 +1,3 @@
-			</div><!-- /wrapper -->
-
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
