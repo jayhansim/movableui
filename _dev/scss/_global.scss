@@ -26,7 +26,7 @@ a, a:before, a:after {
 	   -moz-transition: all .25s;
 	        transition: all .25s;
 }
-a, a:visited {
+a {
 	color: $color-teal;
 	text-decoration: none;
 }
@@ -50,13 +50,8 @@ h1, h2 {
 	letter-spacing: -1px;
 }
 
-h1 {
-	font-size: 30px;
-}
-
-h2 {
-	font-size: 21px;
-}
+h1 { font-size: 36px; }
+h2 { font-size: 27px; }
 
 blockquote {
 	font-style:italic !important;
@@ -73,12 +68,12 @@ img {
 
 ::selection {
 	color: #fff;
-	background-color: $color-yellow;
+	background-color: $color-blue;
 }
 
 ::-moz-selection {
 	color: #fff;
-	background-color: $color-yellow;
+	background-color: $color-blue;
 }
 
 

@@ -1,3 +1,7 @@
+// -------------------------------
+// VAR
+// -------------------------------
+
 $color: #6d6a7a;
 	$color-darker: #3a3746;
 	$color-lighter: #aaa6ba;
@@ -19,3 +23,28 @@ $screen-lg: 1020px;
 
 $screen-sm-max: $screen-md - 1;
 $screen-md-max: $screen-lg - 1;
+
+
+// -------------------------------
+// MIXIN
+// -------------------------------
+
+@mixin block() {
+	background: #fff;
+	box-shadow: 0 2px 5px 0px rgba(89,78,132,.3);
+}
+
+@mixin btn(){
+	color: #fff;
+	display: inline-block;
+	background: $color-teal;
+	padding: 10px 20px;
+	font-family: $font-montserrat;
+	font-size: 15px;
+
+	&:hover {
+		color: #fff;
+		box-shadow: 0 3px 8px rgba($color-blue,.5);
+		background: $color-blue;
+	}
+}
