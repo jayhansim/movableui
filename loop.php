@@ -4,6 +4,10 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class('loop'); ?>>
 		<div class="loop__content">
 
+			<div class="loop__header">
+
+			</div>
+
 			<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="loop__thumbnail">
 					<?php the_post_thumbnail('thumbnail'); // Declare pixel size you need inside the array ?>
@@ -22,8 +26,10 @@
 				<?php the_category(); ?>
 			</div>
 
+			<div class="loop__excerpt">
+				<?php html5wp_excerpt('html5wp_index'); ?>
+			</div>
 
-			<?php html5wp_excerpt('html5wp_index'); ?>
 		</div>
 
 		<a href="<?php the_permalink(); ?>" class="loop__readmore">

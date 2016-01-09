@@ -13,7 +13,7 @@ body {
 	overflow: hidden;
 	background: $color-bg url(../img/background.png) no-repeat -178px -28px;
 	background-size: 712px 462px;
-	line-height:1.6;
+	line-height: 1.7;
 	text-rendering: optimizeLegibility;
 	color: $color;
 	font-size: 16px;
@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-montserrat;
 	color: $color-darker;
 	font-weight: 600;
+	margin-left: -1px;
 }
 
 h1, h2 {
@@ -53,13 +54,7 @@ h1, h2 {
 h1 { font-size: 36px; }
 h2 { font-size: 27px; }
 
-blockquote {
-	font-style:italic !important;
-	margin-bottom: 15px;
-  background: #f2f2f1;
-  border-left: 2px solid #ddd;
-  padding: 15px;
-}
+strong, b {color: $color-darker;}
 
 img {
 	max-width: 100%;

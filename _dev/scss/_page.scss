@@ -11,6 +11,27 @@
 	margin-bottom: 45px;
 }
 
+.post__content {
+	margin-bottom: $margin*4;
+
+	> p:first-of-type {
+		font-weight: bold;
+		color: $color-darker;
+	}
+
+	p, ul, ol, dl, blockquote {
+		margin-bottom: $margin*2;
+	}
+
+	* + h2, * + h3, * + h4, * + h5, * + h6 {
+		margin-top: $margin*2;
+	}
+
+	[class*="wp-image"] {
+		box-shadow: 0 2px 20px rgba($color,.3);
+	}
+}
+
 
 // -------------------------------
 // SINGLE
@@ -19,6 +40,35 @@
 .single {
 	.svg--text {
 		fill: #fff;
+	}
+
+	.header {
+		background-color: $color-darker;
+	}
+
+	.header__title, .logo, .site-description {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.single__bg	{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	top: 0;
+	background-position: center;
+	background-size: cover;
+	opacity: .2;
+}
+
+.wp-caption {
+	width: auto !important;
+	margin-bottom: $margin;
+
+	&-text {
+		text-align: center;
+		font-size: 14px;
 	}
 }
 

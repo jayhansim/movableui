@@ -10,7 +10,57 @@
 	}
 }
 
+// -------------------------------
+// SEARCH FORM
+// -------------------------------
+
+.searchform {
+	position: relative;
+
+	.btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: 0;
+		bottom: 0;
+		border-radius: 0 3px 3px 0;
+		background-color: transparent;
+
+		&:hover {
+			box-shadow: none;
+
+			path {
+				fill: $color;
+			}
+		}
+
+			svg {
+				margin-top: 5px;
+			}
+
+			path {
+				fill: $color-lighter;
+				@include transition(fill .1s linear);
+			}
+	}
+}
 
 // -------------------------------
 // INPUTS
 // -------------------------------
+
+.form-control {
+	background: #fff;
+	box-shadow: 0 1px 2px rgba($color,.3);
+	border: none;
+	border-radius: 3px;
+	padding: 15px;
+	display: block;
+	width: 100%;
+	@include transition(box-shadow .1s linear);
+
+	&:focus, &:active {
+		outline: 0;
+		box-shadow: 0 1px 6px rgba($color,.3);
+	}
+}

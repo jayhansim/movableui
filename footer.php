@@ -1,5 +1,5 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			<footer class="footer <?php if(!is_singular()) { echo "footer--main";} ?>" role="contentinfo">
 
 				<div class="wrapper">
 

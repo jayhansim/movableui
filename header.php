@@ -14,12 +14,23 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<header class="header" role="banner">
+			<header class="header" role="banner">
+
+			<?php if(is_single()): ?>
+				<?php if (have_posts()): the_post(); ?>
+					<?php $thumb_id = get_post_thumbnail_id();
+					$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+					$thumb_url = $thumb_url_array[0]; ?>
+					<div class="single__bg" style="background-image:url(<?php echo $thumb_url ?>)"></div>
+				<?php endif; ?>
+			<?php endif; ?>
+			<?php rewind_posts(); ?>
 
 			<!-- Logo -->
 			<?php if (is_home()): ?>
 				<h1 class="header__title"><?php bloginfo('title'); ?></h1>
 			<?php endif; ?>
+
 			<div class="logo">
 				<a href="<?php bloginfo('home'); ?>" title="Movable UI home">
 					<svg width="236" height="33" viewBox="0 0 236 33" xmlns="http://www.w3.org/2000/svg"><title>Movable UI</title><g fill="none" fill-rule="evenodd">

@@ -4,7 +4,7 @@
 
 .archive__header {
 	text-align: center;
-	margin-bottom: 70px;
+	margin-bottom: 90px;
 
 	h1 {
 		display: inline-block;
@@ -13,6 +13,7 @@
 		box-shadow: 0 2px 6px rgba($color-blue,.3);
 		padding: 8px 20px;
 		font-size: 30px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -20,4 +21,9 @@
 	font-size: 14px;
 	text-transform: uppercase;
 	margin-bottom: 5px;
+}
+
+.archive__page {
+	font-family: $font-montserrat;
+	font-size: 12px;
 }

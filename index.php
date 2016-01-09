@@ -4,7 +4,9 @@
 		<!-- section -->
 		<section>
 
-			<?php get_template_part('loop'); ?>
+			<div class="wrapper">
+				<?php get_template_part('loop'); ?>
+			</div>
 
 		</section>
 		<!-- /section -->

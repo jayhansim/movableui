@@ -4,6 +4,19 @@
 
 .footer {
 	border-top: 1px solid darken($color-bg, 10);
+	font-size: 14px;
+
+	a {
+		color: $color;
+
+		&:hover {
+			color: $color-blue;
+		}
+	}
+
+	&--main {
+		margin-top: 90px;
+	}
 }
 
 .footer__content {
@@ -25,6 +38,14 @@
 			list-style: none;
 			padding-left: 0;
 		}
+
+		li:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	h4 {
+		text-transform: uppercase;
 	}
 }
 
@@ -35,14 +56,6 @@
 	.menu ul {
 		list-style: none;
 		padding-left: 0;
-	}
-
-	a {
-		color: $color;
-
-		&:hover {
-			color: $color-blue;
-		}
 	}
 
 	.copyright {
