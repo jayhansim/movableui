@@ -17,6 +17,10 @@
 .searchform {
 	position: relative;
 
+	.form-control {
+		padding-right: $margin*3;
+	}
+
 	.btn {
 		position: absolute;
 		top: 0;
@@ -25,6 +29,8 @@
 		bottom: 0;
 		border-radius: 0 3px 3px 0;
 		background-color: transparent;
+		padding-left: $margin;
+		padding-right: $margin;
 
 		&:hover {
 			box-shadow: none;
@@ -34,14 +40,14 @@
 			}
 		}
 
-			svg {
-				margin-top: 5px;
-			}
+		svg {
+			margin-top: 5px;
+		}
 
-			path {
-				fill: $color-lighter;
-				@include transition(fill .1s linear);
-			}
+		path {
+			fill: $color-lighter;
+			@include transition(fill .1s linear);
+		}
 	}
 }
 

@@ -17,6 +17,7 @@
 
 
 .loop__content {
+	position: relative;
 	padding: 30px;
 
 	> p:last-child {
@@ -26,13 +27,21 @@
 
 // Thumbnail
 .loop__thumbnail {
-	width: 280px;
-	float: left;
-	margin: -50px 30px 25px -50px;
+	display: block;
 
 	img {
 		box-shadow: 0 2px 20px rgba($color,.3);
 		display: block;
+	}
+
+	@media (min-width: $screen-md) {
+		float: left;
+		margin: -50px 30px 25px -50px;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		max-width: 280px;
+		margin: -50px auto 30px;
 	}
 }
 
@@ -94,6 +103,10 @@
 // eExcerpt
 .loop__excerpt {
 	clear: both;
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
 }
 
 // Read more link

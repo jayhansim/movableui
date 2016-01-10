@@ -27,7 +27,7 @@
 			<?php rewind_posts(); ?>
 
 			<!-- Logo -->
-			<?php if (is_home()): ?>
+			<?php if (is_home() && !is_paged()): ?>
 				<h1 class="header__title"><?php bloginfo('title'); ?></h1>
 			<?php endif; ?>
 

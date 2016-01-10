@@ -20,18 +20,8 @@
 }
 
 .footer__content {
-	padding: 70px 0;
+	padding: 90px 0;
 	list-style: none;
-	margin: 0 -$margin;
-
-	@media (min-width: $screen-sm) {
-		@include display(flex);
-
-		> li {
-			@include flex(1 0 50%);
-			padding: 0 $margin;
-		}
-	}
 
 	[class*="widget_"] {
 		ul {
@@ -46,6 +36,22 @@
 
 	h4 {
 		text-transform: uppercase;
+	}
+
+	@media (min-width: $screen-sm) {
+		@include display(flex);
+		margin: 0 -$margin;
+
+		> li {
+			@include flex(1 0 50%);
+			padding: 0 $margin;
+		}
+	}
+
+	@media (max-width: $screen-sm - 1px) {
+		> li {
+			margin-bottom: $margin*3;
+		}
 	}
 }
 
